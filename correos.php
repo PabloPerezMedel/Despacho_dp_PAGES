@@ -13,6 +13,6 @@
     $mensajeCompleto = $mensaje . "\n Maneras de contactarme: " . $telefono " o tambien por correo el cual es: " . $email " \n tentamente: " . $nombre;
 
     mail($destinatario, $serviciosinteres, $regimenfiscal, $mensajeCompleto, $header);
-    echo "<script> alert('El correo fue enviado exitosamente') </script>";
-    echo "<script> setTimeout(\"location.href='index.html'\", 1000) </script>";
+    echo "<script>alert('El correo fue enviado exitosamente')</script>";
+    echo "<script>setTimeout(\"location.href='index.html'\", 1000)</script>";
 ?>
