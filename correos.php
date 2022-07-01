@@ -1,5 +1,5 @@
 <?php 
-    $destinatario = 'despacho.dp@hotmail.com';  //Este es el correo al que se enviaran los mensajes del formulario
+    $destinatario = 'pabloperezmedel@hotmail.com';  //Este es el correo al que se enviaran los mensajes del formulario
 
     $nombre = $_POST['nombre'];
     $telefono = $_POST['telefono'];
