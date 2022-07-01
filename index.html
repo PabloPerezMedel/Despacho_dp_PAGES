@@ -352,11 +352,14 @@
                     </select>
                     <label for="message">Escribe tu mensaje:</label>
                     <textarea name="mensaje" id="mensaje" placeholder="Escribenos un mensaje" required></textarea>
-                    <div class="send"><button type="submit">Enviar</button></div>
+                    <div class="send"><button type="submit" name="enviar">Enviar</button></div>
                     <div class="mensaje-form">
                         <p>Escribenos un mensaje, con gusto tendras una respuesta de parte de nosotros en muy poco tiempo.</p>
                     </div>
                 </form>
+                <?php
+                    include("correo.php");
+                ?>
             </div>   
             <div class="footer-text">
                 <p>&copy; Despacho dp - 2022 | Todos los derechos reservados.</p>
