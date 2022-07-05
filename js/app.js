@@ -52,7 +52,7 @@ window.onscroll = () => {
     menuContent.style.top = '0px';
     menuContent.style.transition = '0.5s';
   }else{
-    menuContent.style.top = '-60px';
+    menuContent.style.top = '-60px'; //0px
     menuContent.style.transition = '0.5s';
   }
   prevScrollPos = currentScrollPos;
@@ -64,8 +64,8 @@ window.onscroll = () => {
   if(arriba <= 600){
     menuContent.style.borderBottom = 'none';
 
-    //Ocultar Go Top
-    goTop.style.right = '-100px';
+        /*//Ocultar Go Top
+        goTop.style.right = '-100px';*/
   }else{
     menuContent.style.borderBottom = '3px solid #2C2F40';
 
@@ -89,3 +89,12 @@ abajo.addEventListener('click', () => {
   document.documentElement.scrollTop = 715;
   
 });
+
+
+/*const menuLinks = document.querySelectorAll(".menu a[href^='#']");
+
+menuLinks.forEach(menuLinks => {
+  menuLinks.addEventListener("click", function(){
+    menuLinks.classList.remove(".barIconX");
+  });
+});*/
