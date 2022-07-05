@@ -6,30 +6,23 @@ let menuContent = document.querySelector('.menu');
 var activador = true;
 
 btnMenu.addEventListener('click', (event) => {
-
   //Icon X
   barIconX.classList.toggle('fa-times');
-
    if(activador){
      menu.style.left = '0%'; 
      menu.style.transition = '0.5s';
-  
      activador = false;
    }
    else{
     activador = false;
     menu.style.left = '-100%';
-
     activador = true;
    }
-
 });
 
 // Intercalar la clase active
 let enlaces = document.querySelectorAll('.lists li a');
-
 enlaces.forEach((element) => {
-   
   element.addEventListener('click', (event) => {
    enlaces.forEach((link) => {
      link.classList.remove('active');
@@ -39,12 +32,10 @@ enlaces.forEach((element) => {
 });
 
 //Efecto Scroll
-
  let prevScrollPos = window.pageYOffset;
  let goTop = document.querySelector('.go-top');
 
 window.onscroll = () => {
-  
   //Mostrar y Ocultar Menu - Scroll Menu (Function)
   let currentScrollPos = window.pageYOffset;
 
@@ -56,7 +47,7 @@ window.onscroll = () => {
     menuContent.style.transition = '0.5s';
   }
   prevScrollPos = currentScrollPos;
-  
+
   //Mostrar y Ocultar Scoll Estilos
   let arriba = window.pageYOffset;
 
@@ -64,8 +55,8 @@ window.onscroll = () => {
   if(arriba <= 600){
     menuContent.style.borderBottom = 'none';
 
-        /*//Ocultar Go Top
-        goTop.style.right = '-100px';*/
+    /*//Ocultar Go Top
+    goTop.style.right = '-100px';*/
   }else{
     menuContent.style.borderBottom = '3px solid #2C2F40';
 
